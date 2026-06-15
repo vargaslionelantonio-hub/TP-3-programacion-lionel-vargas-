@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let componente = parseInt(prompt("ingresa el numero el componente \n 1) motherboard \n 2) procesador \n 3) memoria ram \n 4) disco rigido \n 5) placa de video"));
+        switch (componente) {
+            case 1:
+                motherboard = parseInt(prompt("ingresa del numero de serie de la motherboard"));
+                alert("ingrese del numero de serie de la motherboard: " + motherboard);
+                break;
+            case 2:
+                procesador = parseInt(prompt("ingresa del numero del procesador"));
+                alert("numero del procesador: " + procesador);
+                break;
+            case 3:
+                memoriaRam = parseInt(prompt("ingresa del numero de serie de la memoria ram"));
+                alert("numero de serie de la memoria ram: " + memoriaRam);
+                break;
+            case 4:
+                discoRigido = parseInt(prompt("ingresa del numero de serie del disco rigido"));
+                alert("numero de serie del disco rigido: " + discoRigido);
+                break;
+            case 5:
+                placaDeVideo = parseInt(prompt("ingresa del numero de serie de la placa de video"));
+                alert("numero de serie de la placa de video: " + placaDeVideo);
+                break;
+            default:
+                alert("componente no valido"); 
+                break;      
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let producto = prompt("Ingrese el nombre del producto");
+        let stock = prompt("ingresa la cantidad de stock:");
+
+        if (stock < 3) {
+            
+            alert("pedir urgente stock de " + producto + ", que solo tenemos tenemos solamente:" + stock);
+            a = ("pedir urgente stock de" + producto + ", que solo tenemos tenemos solamente:" + stock);    
+            alert("nombre del componente: " + producto + "\n cantidad de stock: " + stock + "\n estado de stock: " + a);
+            
+        } else if (stock >= 3 && stock <= 10) {
+            alert("Stock bajo, considerar reponer");
+            b = ("Stock bajo, considerar reponer");
+            alert("nombre del componente: " + producto + "\n cantidad de stock: " + stock + "\n estado de stock: " + b);
+
+        } else {
+            alert("stock suficiente");
+            c = ("stock suficiente");
+            alert("nombre del componente: " + producto + "\n cantidad de stock: " + stock + "\n estado de stock: " + c);
+        }
+    </script>
+</body>
+</html>

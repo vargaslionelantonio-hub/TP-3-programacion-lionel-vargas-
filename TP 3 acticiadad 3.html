@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombredelequipo = prompt("ingresa el nombre del equipo");
+        let dia = 0
+
+
+        switch ("nombredelequipo"){
+            case "nombredelequipo":
+                let prioridad = prompt("ingresa la prioridad del equipo \n 1) alta \n 2) media \n 3) baja");
+                if (prioridad == "1"){
+                    prioridad = "alta";
+                    alert("El equipo " + nombredelequipo + " tiene prioridad alta");
+                    dia = prompt("Días transcurridos desde que se reportó el problema");
+                
+
+                } else if  (prioridad == "2"){
+                        prioridad = "media";    
+
+                    alert("El equipo " + nombredelequipo + " tiene prioridad media");
+                    dia = prompt("Días transcurridos desde que se reportó el problema");
+                
+                }else if (prioridad == "3"){
+                    prioridad = "baja"; 
+                    alert("El equipo " + nombredelequipo + " tiene prioridad baja");
+                    dia = prompt("Días transcurridos desde que se reportó el problema");
+                }else {
+                    alert("prioridad no valida");
+                    break
+                }
+            case 2:
+                if (dia < 3){
+                    alert("Seguimiento normal");
+                    a = "seguimiento normal";
+                    alert("nombre del equipo: " + nombredelequipo + "\n prioridad: " + prioridad + "\n dias transcurridos: " + dia + "\n control del estado de la tarea: " + a);
+                    break;
+                }
+            case 3:
+                if (dia < 7){
+                    alert("Realizar control del estado de la tarea");
+                    b = "Realizar control del estado de la tarea";
+                    alert("nombre del equipo: " + nombredelequipo + "\n prioridad: " + prioridad + "\n dias transcurridos: " + dia + "\n control del estado de la tarea: " + b);
+                    break;
+                }
+            case 4: 
+                if (dia > 7){
+                    alert("Realizar control del estado de la tarea");
+                    c = "Realizar control del estado de la tarea";
+                    alert("nombre del equipo: " + nombredelequipo + "\n prioridad: " + prioridad + "\n dias transcurridos: " + dia + "\n control del estado de la tarea: " + c);
+                    break;
+                }
+            default:
+                alert("numero no valido");
+                break;
+            }
+    </script>
+</body>
+</html>
